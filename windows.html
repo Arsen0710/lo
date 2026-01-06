@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: #fff;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .main{
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .imgfirst{
+            width: 1.5rem;
+        }
+
+        div{
+            display: flex;
+            align-items: center;
+        }
+
+        .personaldiv{
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .d-none{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="homediv">
+            <svg class="imgfirst" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M896 832H128V490.666667L512 128l384 362.666667z" fill="#E8EAF6"></path><path d="M832 448l-106.666667-106.666667V192h106.666667zM128 832h768v106.666667H128z" fill="#C5CAE9"></path><path d="M512 91.733333L85.333333 488.533333l42.666667 46.933334L512 179.2l384 356.266667 42.666667-46.933334z" fill="#B71C1C"></path><path d="M384 597.333333h256v341.333334H384z" fill="#D84315"></path><path d="M448 362.666667h128v128h-128z" fill="#01579B"></path><path d="M586.666667 757.333333c-6.4 0-10.666667 4.266667-10.666667 10.666667v42.666667c0 6.4 4.266667 10.666667 10.666667 10.666666s10.666667-4.266667 10.666666-10.666666v-42.666667c0-6.4-4.266667-10.666667-10.666666-10.666667z" fill="#FF8A65"></path></g></svg>
+            <span>Home</span>
+        </div>
+
+        <div class="gallerydiv">
+            <svg class="imgfirst" viewBox="0 0 13333.33 13333.33" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style type="text/css">  .fil0 {fill:none} .fil1 {fill:#03A9F4} .fil3 {fill:#4FC3F7} .fil2 {fill:#FFFF66}  </style> </defs> <g id="Layer_x0020_1"> <rect class="fil0" height="13333.33" width="13333.33" x="-0" y="-0.01"></rect> <path class="fil1" d="M4066.67 1833.33l5200 0c1229.95,0 2233.33,1003.38 2233.33,2233.33l0 5200c0,1229.95 -1003.38,2233.33 -2233.33,2233.33l-5200 0c-1229.95,0 -2233.33,-1003.38 -2233.33,-2233.33l0 -5200c0,-1229.95 1003.38,-2233.33 2233.33,-2233.33z"></path> <rect class="fil2" height="8000" rx="1400" ry="1400" width="8000" x="2666.67" y="2666.67"></rect> <path class="fil1" d="M9833.33 7406.67l-1540 -1540 -850 850 -2112.52 -2112.52 -1830.81 1830.81 0 2831.71c0,310.02 256.65,566.67 566.67,566.67l5200 0c310.02,0 566.67,-256.65 566.67,-566.67l0 -1860z"></path> <circle class="fil1" cx="8540" cy="4306.66" r="573.33"></circle> <path class="fil3" d="M2666.67 6434.96l0 2831.71c0,770 630,1400 1400,1400l5200 0c770,0 1400,-630 1400,-1400l0 -1860 -833.33 0 0 1860c0,310.02 -256.65,566.67 -566.67,566.67l-5200 0c-310.02,0 -566.67,-256.65 -566.67,-566.67l0 -2831.71 -833.33 0z"></path> </g> </g></svg>
+            <span>Gallery</span>
+        </div>
+
+        <div class="personaldiv" id="contact">
+            <div class="arsen" id="ars">
+                <svg class="imgfirst" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path fill-rule="evenodd" clip-rule="evenodd" fill="#45AAB8" d="M48,54H12C6.478,54,2,49.523,2,44s4.478-10,10-10 c0.553,0,1-0.447,1-1c0-0.551-0.444-0.996-0.995-0.998h0.015C12.013,32.002,12.007,32,12,32c-0.771,0-1.521,0.08-2.251,0.219 C8.673,31.135,8,29.648,8,28c0-3.314,2.687-6,6-6c1.657,0,3.157,0.672,4.243,1.758c0,0,1.007,0.992,1.757,0.244 c0.75-0.75-0.343-1.658-0.343-1.658c-0.626-0.625-1.359-1.141-2.163-1.531c0.002,0,0.004,0,0.006,0.002 C20.275,14.451,26.614,10,34,10c8.72,0,15.988,6.199,17.644,14.432c0.004,0.002,0.007,0.002,0.011,0.004 C50.479,24.16,49.26,24,48,24c-0.553,0-1,0.447-1,1s0.447,1,1,1c7.732,0,14,6.268,14,14C62,47.73,55.732,54,48,54z"></path> <g> <path fill-rule="evenodd" clip-rule="evenodd" fill="#394240" d="M53.765,25.088C52.351,15.426,44.054,8,34,8 c-8.263,0-15.353,5.012-18.402,12.16C15.081,20.055,14.548,20,14,20c-4.418,0-8,3.582-8,8c0,1.818,0.614,3.488,1.636,4.832 C3.169,34.578,0,38.914,0,44c0,6.627,5.373,12,12,12h36c8.837,0,16-7.162,16-16C64,33.197,59.749,27.402,53.765,25.088z M48,54H12 C6.478,54,2,49.523,2,44s4.478-10,10-10c0.553,0,1-0.447,1-1c0-0.551-0.444-0.996-0.995-0.998h0.015 C12.013,32.002,12.007,32,12,32c-0.771,0-1.521,0.08-2.251,0.219C8.673,31.135,8,29.648,8,28c0-3.314,2.687-6,6-6 c1.657,0,3.157,0.672,4.243,1.758c0,0,1.007,0.992,1.757,0.244c0.75-0.75-0.343-1.658-0.343-1.658 c-0.626-0.625-1.359-1.141-2.163-1.531c0.002,0,0.004,0,0.006,0.002C20.275,14.451,26.614,10,34,10 c8.72,0,15.988,6.199,17.644,14.432c0.004,0.002,0.007,0.002,0.011,0.004C50.479,24.16,49.26,24,48,24c-0.553,0-1,0.447-1,1 s0.447,1,1,1c7.732,0,14,6.268,14,14C62,47.73,55.732,54,48,54z"></path> <path fill-rule="evenodd" clip-rule="evenodd" fill="#394240" d="M48,30c-0.553,0-1,0.447-1,1s0.447,1,1,1c4.418,0,8,3.582,8,8 c0,0.553,0.447,1,1,1s1-0.447,1-1C58,34.477,53.522,30,48,30z"></path> <path fill-rule="evenodd" clip-rule="evenodd" fill="#394240" d="M18.828,35.281c-0.75,0.734,0.243,1.646,0.243,1.646 C20.881,38.738,22,41.238,22,44c0,0.553,0.447,1,1,1s1-0.447,1-1c0-3.314-1.344-6.314-3.515-8.486 C20.485,35.514,19.578,34.547,18.828,35.281z"></path> </g> </g> </g></svg>
+                <span>Mikey : Personal</span>
+            </div>
+
+            <div id="contact-dropdown">
+                <div class="dropdown d-none">
+                    <svg class="imgfirst" width="64px" height="64px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M242.3 743.4h603.4c27.8 0 50.3-22.5 50.3-50.3V192H192v501.1c0 27.8 22.5 50.3 50.3 50.3z" fill="#FFEA00"></path><path d="M178.3 807.4h603.4c27.8 0 50.3-22.5 50.3-50.3V256H128v501.1c0 27.8 22.5 50.3 50.3 50.3z" fill="#FFFF8D"></path><path d="M960 515v384c0 35.3-28.7 64-64 64H128c-35.3 0-64-28.7-64-64V383.8c0-35.3 28.7-64 64-64h344.1c24.5 0 46.8 13.9 57.5 35.9l46.5 95.3H896c35.3 0 64 28.7 64 64z" fill="#feef9b"></path><path d="M704 512c0-20.7-1.4-41.1-4.1-61H576.1l-46.5-95.3c-10.7-22-33.1-35.9-57.5-35.9H128c-35.3 0-64 28.7-64 64V899c0 6.7 1 13.2 3 19.3C124.4 945 188.5 960 256 960c247.4 0 448-200.6 448-448z" fill="#feef9b"></path></g></svg>
+                    <span>users</span>
+                </div>
+                <div class="dropdown d-none">
+                    <svg class="imgfirst" width="64px" height="64px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M242.3 743.4h603.4c27.8 0 50.3-22.5 50.3-50.3V192H192v501.1c0 27.8 22.5 50.3 50.3 50.3z" fill="#FFEA00"></path><path d="M178.3 807.4h603.4c27.8 0 50.3-22.5 50.3-50.3V256H128v501.1c0 27.8 22.5 50.3 50.3 50.3z" fill="#FFFF8D"></path><path d="M960 515v384c0 35.3-28.7 64-64 64H128c-35.3 0-64-28.7-64-64V383.8c0-35.3 28.7-64 64-64h344.1c24.5 0 46.8 13.9 57.5 35.9l46.5 95.3H896c35.3 0 64 28.7 64 64z" fill="#feef9b"></path><path d="M704 512c0-20.7-1.4-41.1-4.1-61H576.1l-46.5-95.3c-10.7-22-33.1-35.9-57.5-35.9H128c-35.3 0-64 28.7-64 64V899c0 6.7 1 13.2 3 19.3C124.4 945 188.5 960 256 960c247.4 0 448-200.6 448-448z" fill="#feef9b"></path></g></svg>
+                    <span>User</span>
+                </div>
+                <div class="dropdown d-none">
+                    <svg class="imgfirst" width="64px" height="64px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M242.3 743.4h603.4c27.8 0 50.3-22.5 50.3-50.3V192H192v501.1c0 27.8 22.5 50.3 50.3 50.3z" fill="#FFEA00"></path><path d="M178.3 807.4h603.4c27.8 0 50.3-22.5 50.3-50.3V256H128v501.1c0 27.8 22.5 50.3 50.3 50.3z" fill="#FFFF8D"></path><path d="M960 515v384c0 35.3-28.7 64-64 64H128c-35.3 0-64-28.7-64-64V383.8c0-35.3 28.7-64 64-64h344.1c24.5 0 46.8 13.9 57.5 35.9l46.5 95.3H896c35.3 0 64 28.7 64 64z" fill="#feef9b"></path><path d="M704 512c0-20.7-1.4-41.1-4.1-61H576.1l-46.5-95.3c-10.7-22-33.1-35.9-57.5-35.9H128c-35.3 0-64 28.7-64 64V899c0 6.7 1 13.2 3 19.3C124.4 945 188.5 960 256 960c247.4 0 448-200.6 448-448z" fill="#feef9b"></path></g></svg>
+                    <span>Windows</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let ars = document.querySelector("#contact");
+        ars.addEventListener("click", ()=>{
+            let arsen = document.querySelector("#contact-dropdown");
+            arsen.classList.toggle("d-none");
+        });
+        
+    </script>
+</body>
+</html>
