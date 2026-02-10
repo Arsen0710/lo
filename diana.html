@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>tdboodman bio</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+		* {
+    -webkit-tap-highlight-color: transparent;
+	user-select: none;
+}
+		
+	.everyone {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    will-change: transform;
+}
+
+		body {
+			display: flex;
+			background-color: rgb(2, 2, 8);
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			width: 100vw;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		.owner {
+			background-color: #24244133;
+			border-radius: 1.2rem !important;
+			padding: 1rem;
+			width: 38rem;
+			height: 12rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: stretch;
+			transition: transform 400ms ease;
+			will-change: transform;
+			backface-visibility: hidden;
+			transition: transform 400ms ease;
+			will-change: transform;
+		}
+
+		.first-line {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			width: 100%;
+			margin-bottom: 1rem;
+			background-color: transparent;
+		}
+
+		.left,
+		.right {
+			display: flex;
+			align-items: center;
+			gap: .5rem;
+		}
+
+		.center {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			background-color: transparent;
+		}
+
+		.avatar {
+			width: 6rem;
+			height: 6rem;
+			background: url('avatar.png') center/cover no-repeat;
+			border-radius: 50%;
+			margin-bottom: .5rem;
+		}
+
+		.own {
+			font-size: 1.8rem;
+			color: white;
+			margin: 0;
+			font-weight: 600;
+		}
+
+		.description {
+			font-size: 1rem;
+			color: white;
+		}
+
+		svg {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+
+		.views {
+			width: 1rem;
+			height: 1rem;
+		}
+
+		.sees {
+			color: white;
+		}
+
+		.py-1 {
+			padding-top: .25rem;
+			padding-bottom: .25rem;
+		}
+
+		.px-2 {
+			padding-left: .5rem;
+			padding-right: .5rem;
+		}
+
+		.gap-2 {
+			gap: .5rem;
+		}
+
+		.flex-wrap {
+			flex-wrap: wrap;
+		}
+
+		.flex-row {
+			flex-direction: row;
+		}
+
+		.flex {
+			display: flex;
+			align-items: center;
+			position: relative;
+		}
+
+		.p-1 {
+			display: none;
+		}
+
+		.w-5:hover .p-1 {
+			display: block;
+		}
+
+		.absol {
+			position: absolute;
+		}
+
+		*,
+		:after,
+		:before {
+			--tw-border-spacing-x: 0;
+			--tw-border-spacing-y: 0;
+			--tw-translate-x: 0;
+			--tw-translate-y: 0;
+			--tw-rotate: 0;
+			--tw-skew-x: 0;
+			--tw-skew-y: 0;
+			--tw-scale-x: 1;
+			--tw-scale-y: 1;
+			--tw-pan-x: ;
+			--tw-pan-y: ;
+			--tw-pinch-zoom: ;
+			--tw-scroll-snap-strictness: proximity;
+			--tw-gradient-from-position: ;
+			--tw-gradient-via-position: ;
+			--tw-gradient-to-position: ;
+			--tw-ordinal: ;
+			--tw-slashed-zero: ;
+			--tw-numeric-figure: ;
+			--tw-numeric-spacing: ;
+			--tw-numeric-fraction: ;
+			--tw-ring-inset: ;
+			--tw-ring-offset-width: 0px;
+			--tw-ring-offset-color: #fff;
+			--tw-ring-color: rgba(59, 130, 246, .5);
+			--tw-ring-offset-shadow: 0 0 #0000;
+			--tw-ring-shadow: 0 0 #0000;
+			--tw-shadow: 0 0 #0000;
+			--tw-shadow-colored: 0 0 #0000;
+			--tw-blur: ;
+			--tw-brightness: ;
+			--tw-contrast: ;
+			--tw-grayscale: ;
+			--tw-hue-rotate: ;
+			--tw-invert: ;
+			--tw-saturate: ;
+			--tw-sepia: ;
+			--tw-drop-shadow: ;
+			--tw-backdrop-blur: ;
+			--tw-backdrop-brightness: ;
+			--tw-backdrop-contrast: ;
+			--tw-backdrop-grayscale: ;
+			--tw-backdrop-hue-rotate: ;
+			--tw-backdrop-invert: ;
+			--tw-backdrop-opacity: ;
+			--tw-backdrop-saturate: ;
+			--tw-backdrop-sepia: ;
+			--tw-contain-size: ;
+			--tw-contain-layout: ;
+			--tw-contain-paint: ;
+			--tw-contain-style: ;
+		}
+
+		.owner2 {
+			background-color: #24244133;
+			border-radius: 1.2rem !important;
+			padding: 1rem;
+			width: 17.625rem;
+			height: 2.75rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			transition: transform 400ms ease;
+			will-change: transform;
+			backface-visibility: hidden;
+			transition: transform 400ms ease;
+			will-change: transform;
+		}
+
+		.owner3 {
+			background-color: #24244133;
+			border-radius: 1.2rem !important;
+			padding: 1rem;
+			width: 17.625rem;
+			height: 2.75rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			transition: transform 400ms ease;
+			will-change: transform;
+			backface-visibility: hidden;
+			transition: transform 400ms ease;
+			will-change: transform;
+		}
+
+		.text-sm {
+			transition-duration: .3s;
+			width: 21rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			color: #fff;
+			font-size: .875rem;
+			font-weight: 700;
+			line-height: 1.25rem;
+		}
+
+.third-line {
+  display: flex;
+  gap: 0;
+  padding: 1rem 2rem 1rem 1rem;
+}
+
+		.everyone {
+			display: flex;
+			flex-direction: column;
+			gap: .75rem;
+			transition: transform 400ms ease;
+			will-change: transform;
+			backface-visibility: hidden;
+			transition: transform 400ms ease;
+			will-change: transform;
+		}
+
+		.second-line {
+			display: flex;
+			flex-direction: row;
+			gap: .75rem;
+			background-color: transparent;
+		}
+
+		.third-line{
+			display: flex;
+			gap: 19.5rem;
+			width: 91%;
+			height: 5.5rem;
+			padding: 1rem;
+			align-items: center;
+			flex-direction: row;
+			border-radius: 16px;
+			background-color: #24244133;
+		}
+
+		.font-bold{
+			display: flex;
+			width: 8.85rem;
+			font-size: 1rem;
+			color: white;
+			margin: 0;
+			font-weight: 900;
+			font-family: 'Poppins' sans-serif;
+		}
+
+		.into{
+			display: flex;
+			gap: .5rem;
+			flex-direction: row;
+			align-items: center;
+		}
+
+		.font-thin{
+			font-size: 14px;
+			color:white;
+			margin: 0;
+			font-weight: 500;
+			font-family: 'Poppins' sans-serif;
+		}
+
+		.join{
+			width: 6.5rem;
+			display: flex;
+			text-align: right;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			font-family: 'Poppins' sans-serif;
+			font-weight: 600;
+			font-size: 14px;
+			left: 8px;
+		}
+
+		.pokolenie{
+			border-radius: 30px;
+		}
+
+		.richpremium{
+			display: none;
+			position: absolute;
+			top: 1.5rem;
+		}
+
+		.entered{
+			display: flex;
+			color: #fff;
+			transition: all 0.3s ease;
+			transform: scale(1.1);
+			position: absolute;
+		}
+
+
+		.nobatidao{
+			margin-left: 8px;
+			transition: all 0.3s ease;
+		}
+
+		.minipekka{
+			transition: all 0.3s ease;
+		}
+
+		.randomnn{
+			left: 128px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="everyone" data-tilt data-tilt-max="20" data-tilt-glare="true" data-tilt-max-glare="0.2">
+		<div class="owner">
+			<div class="first-line">
+				<div class="left">
+					<svg xmlns="http://www.w3.org/2000/svg" style="fill:#ffffff" class="w-4 h-4" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path></svg>
+					<span class="sees">999</span>
+				</div>
+				<div class="center">
+					<div class="avatar"></div>
+					<h1 class="own">TDBOODMAN</h1>
+					<span class="description">OWNER OF BEST WEBSITE CREATOR</span>
+				</div>
+				<div class="right">
+					<div style="border-color:#6370ffff;border-width:0px;border-radius:9999px;background-color:#02020c33"
+						class="absolute flex flex-row flex-wrap z-40 px-2 py-1 gap-2 right-4 ">
+						<div class="group flex flex-col items-center justify-center">
+							<span class="richpremium">Rich</span>
+							<svg style="filter:drop-shadow(0px 0px 3.5px #6370ff)" class="w-5 h-5"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+								<rect class="w-5 h-5 fill-none"></rect>
+								<path style="fill:#6370ff"
+									d="M12.0611,9.9156A.9806.9806,0,0,1,11.0244,9.13a.71.71,0,0,0-.88-.5682A.6314.6314,0,0,0,9.7,9.13a1.8232,1.8232,0,0,0,.31.9012,2.0871,2.0871,0,0,0,1.4618.8228v.7523c.017.3021.3232.4352.5953.434a.4931.4931,0,0,0,.5229-.434v-.7551a1.7589,1.7589,0,0,0,1.7108-1.7935c0-.9948-.5243-1.5575-1.92-1.9465C11.3824,6.83,11.16,6.6463,11.16,6.2378c0-.2877.1708-.6412.771-.6412a.9.9,0,0,1,.6632.2114.8142.8142,0,0,1,.2339.4575.6647.6647,0,0,0,.7441.6035.6358.6358,0,0,0,.5836-.6035,1.7507,1.7507,0,0,0-.3872-.9814,1.81,1.81,0,0,0-1.2529-.6283V4.0431a.555.555,0,0,0-1.11,0V4.669a1.7428,1.7428,0,0,0-1.58,1.6977c0,.8788.46,1.4606,2.0381,1.9147.8668.2475,1.1088.4712,1.1088.93C12.9727,9.5847,12.7517,9.9156,12.0611,9.9156Z">
+								</path>
+								<path style="fill:#6370ff"
+									d="M23.2941,1.4118H.7059A.706.706,0,0,0,0,2.1176V13.4118a.7018.7018,0,0,0,.213.5032,2.0689,2.0689,0,0,0,.3381,2.32,2.0838,2.0838,0,0,0,0,2.8235,2.1082,2.1082,0,0,0,1.5665,3.5294H21.8824a2.1082,2.1082,0,0,0,1.5665-3.5294,2.0838,2.0838,0,0,0,0-2.8235,2.0689,2.0689,0,0,0,.3381-2.32A.7018.7018,0,0,0,24,13.4118V2.1176A.706.706,0,0,0,23.2941,1.4118Zm-.7059,13.4117a.7072.7072,0,0,1-.7058.7059H2.1176a.7059.7059,0,0,1,0-1.4118H21.8824A.7072.7072,0,0,1,22.5882,14.8235Zm0,2.8236a.7072.7072,0,0,1-.7058.7058H2.1176a.7059.7059,0,0,1,0-1.4117H21.8824A.7072.7072,0,0,1,22.5882,17.6471ZM5.1051,2.8235h13.79a4.4589,4.4589,0,0,0,3.6933,3.6933V9.0126a4.459,4.459,0,0,0-3.6933,3.6933H5.1051A4.459,4.459,0,0,0,1.4118,9.0126V6.5168A4.4589,4.4589,0,0,0,5.1051,2.8235ZM1.4118,12.7059V10.4347a3.0742,3.0742,0,0,1,2.2711,2.2712H1.4118Zm18.9053,0a3.0742,3.0742,0,0,1,2.2711-2.2712v2.2712H20.3171Zm2.2711-9.8824V5.0947a3.0742,3.0742,0,0,1-2.2711-2.2712Zm-21.1764,0H3.6829A3.0742,3.0742,0,0,1,1.4118,5.0947Zm20.4706,18.353H2.1176a.7059.7059,0,0,1,0-1.4118H21.8824a.7059.7059,0,0,1,0,1.4118Z">
+								</path>
+							</svg>
+							<div style="border-color:#6370ffff;border-width:0px;border-radius:1.2rem;background-color:#02020cff"
+								class="absol p-1 translate-y-3 z-10 scale-0 group-hover:scale-100 group-hover:translate-y-[2.2rem] duration-300 transform-gpu whitespace-nowrap">
+								<span style="color:#ffffff" class="font-semibold text-sm">Good</span>
+							</div>
+						</div>
+						<div class="group flex flex-col items-center justify-center ski">
+							<span class="richpremium">Premium</span>
+							<svg style="filter:drop-shadow(0px 0px 3.5px #6370ff)" class="w-5 h-5"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+								<rect class="w-5 h-5 fill-none"></rect>
+								<path style="fill:#6370ff"
+									d="M23.9993,6.7569,24,6.7537c0-.0067-.0037-.0122-.0038-.0189a.7.7,0,0,0-.0456-.2256.6818.6818,0,0,0-.0363-.075.698.698,0,0,0-.04-.0831l-3.546-5.1a.7068.7068,0,0,0-.58-.3033H4.2518a.7068.7068,0,0,0-.58.3033l-3.546,5.1a.698.698,0,0,0-.04.0831.6818.6818,0,0,0-.0363.075.7.7,0,0,0-.0456.2256C.0037,6.7415,0,6.747,0,6.7537l.0007.0032a.7073.7073,0,0,0,.05.2462.718.718,0,0,0,.0364.0716.7019.7019,0,0,0,.0475.0935L11.4283,22.761l.0046.0039a.69.69,0,0,0,.0674.0683.7022.7022,0,0,0,.06.0582.69.69,0,0,0,.0916.0608.6592.6592,0,0,0,.0641.0319c.0133.006.0253.0144.0388.0195.0078.0028.013.0094.0209.012l.0049.0008a.6866.6866,0,0,0,.4388,0l.0049-.0008c.0079-.0026.0131-.0092.0209-.012.0135-.0051.0255-.0135.0388-.0195a.6592.6592,0,0,0,.0641-.0319.69.69,0,0,0,.0916-.0608.7022.7022,0,0,0,.06-.0582.69.69,0,0,0,.0674-.0683l.0046-.0039L23.8658,7.1682a.7019.7019,0,0,0,.0475-.0935.718.718,0,0,0,.0364-.0716A.7073.7073,0,0,0,23.9993,6.7569ZM6.2636,7.46l3.599,10.7328L2.0889,7.46Zm8.1869-5.1,1.6812,3.6884H7.8683L9.55,2.3594Zm1.7975,5.1L12,20.127,7.752,7.46Zm1.4884,0h4.1747L14.1374,18.1924Zm4.2071-1.4118H17.6829L16.0018,2.3594H19.38ZM4.62,2.3594H7.9989L6.3169,6.0478h-4.26Z">
+								</path>
+							</svg>
+							<div style="border-color:#6370ffff;border-width:0px;border-radius:1.2rem;background-color:#02020cff"
+								class="absol p-1 translate-y-3 z-10 scale-0 group-hover:scale-100 group-hover:translate-y-[2.2rem] duration-300 transform-gpu whitespace-nowrap">
+								<span style="color:#ffffff" class="font-semibold text-sm">Teacher</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="second-line">
+			<div class="owner2">
+				<a href="https://smartalpacademy.com/welcome/ch/ru" class="text-sm">
+					<svg role="img" class="h-7 w-7" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+						style="filter: drop-shadow(rgb(99, 112, 255) 0px 0px 3.5px); fill: rgb(99, 112, 255); margin-right: 1rem; margin-left: 1rem; width: 1.75rem; height: 1.75rem;">
+						<path
+							d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z">
+						</path>
+						<path
+							d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z">
+						</path>
+					</svg>
+					<span class="text-sm" id="firstf" style="display: flex; gap: 3rem;">Smartalp Academy
+						<svg xmlns="http://www.w3.org/2000/svg" class="minipekka"
+							class="w-7 h-7 fill-white group-hover:translate-x-1 duration-300" viewBox="0 0 16 16">
+							<path fill-rule="evenodd"
+								d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+								style="fill: white;"></path>
+						</svg>
+					</span>
+				</a>
+			</div>
+			<div class="owner3">
+				<a href="https://www.pokolenie.kg/" class="text-sm">
+					<svg role="img" class="h-7 w-7" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+						style="filter: drop-shadow(rgb(99, 112, 255) 0px 0px 3.5px); fill: rgb(99, 112, 255); margin-right: 1rem; margin-left: 1rem; width: 1.75rem; height: 1.75rem;">
+						<path
+							d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z">
+						</path>
+						<path
+							d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z">
+						</path>
+					</svg>
+					<span class="text-sm" style="display: flex; gap: 3rem;">Новое поколение
+						<svg xmlns="http://www.w3.org/2000/svg" class="minipekka" id="secondf"
+							class="w-7 h-7 fill-white group-hover:translate-x-1 duration-300" viewBox="0 0 16 16">
+							<path fill-rule="evenodd"
+								d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+								style="fill: white;"></path>
+						</svg>
+					</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="third-line">
+			<div class="into">
+				<img src="https://pokolenie.kg/img/logo.svg" style="width: 4.5rem; height: 4.5rem; border-radius: 1.2rem;" class="pokolenie">
+               		<div class="three">
+						<h2 class="font-bold">Новое поколение</h2>
+						<h2 class="font-thin">
+							<img src="circle-svgrepo-com.svg" style="width: 8px; height: 8px;">
+							8 online
+						</h2>
+						<h2 class="font-thin">
+							<img src="circle.svg" style="width: 8px; height: 8px;">
+							18 Members
+						</h2>
+					</div>
+			</div>
+
+			<div class="three">
+				<a href="https://discord.gg/AXrTWrysAh" style="text-decoration: none;" class="randomnn">
+					<span class="join">Join Server
+						<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 group-hover:translate-x-1 duration-300" viewBox="0 0 16 16" style="fill: rgb(99, 112, 255);"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"></path></svg>
+					</span>
+				</a>
+			</div>
+		</div>
+
+	<script>
+		const owner = document.querySelector('.everyone');
+		let timeoutId;
+
+		owner.addEventListener('mousemove', (e) => {
+			const rect = owner.getBoundingClientRect();
+			const x = e.clientX - rect.left;
+			const y = e.clientY - rect.top;
+
+			const centerX = rect.width / 2;
+			const centerY = rect.height / 2;
+
+			const rotateX = ((y - centerY) / centerY) * 5;
+			const rotateY = ((x - centerX) / centerX) * 5;
+			const damping = 0.6;
+
+			owner.style.transform = `perspective(950px) rotateX(${-rotateX}deg) rotateY(${rotateY}deg) scale(1.01)`;
+			owner.style.transition = 'transform 0.1s ease-out';
+
+			clearTimeout(timeoutId);
+		});
+
+		owner.addEventListener('mouseleave', () => {
+			owner.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)';
+			owner.style.transition = 'transform 0.35s ease-in-out';
+		});
+
+		let group = document.querySelector('.group');
+		group.addEventListener("mouseenter", () => {
+			let richPremium = document.querySelector('.richpremium');
+			richPremium.classList.toggle('entered');
+		});
+
+		group.addEventListener("mouseleave", () => {
+			let richPremium = document.querySelector('.richpremium');
+			richPremium.classList.toggle('entered');
+		});
+
+		let ski = document.querySelector('.ski');
+		ski.addEventListener("mouseenter", () => {
+			let richPremium = document.querySelector('.richpremium');
+			richPremium.classList.toggle('entered');
+		});
+
+		ski.addEventListener("mouseleave", () => {
+			let richPremium = document.querySelector('.richpremium');
+			richPremium.classList.toggle('entered');
+		});
+
+		let nobatidao = document.querySelector(".minipekka");
+		nobatidao.addEventListener("mouseenter", () => {
+			nobatidao.classList.toggle('nobatidao');
+		});
+
+		nobatidao.addEventListener("mouseleave", () => {
+			nobatidao.classList.toggle('nobatidao');
+		});
+
+		let newgen = document.querySelector("#secondf");
+		newgen.addEventListener("mouseenter", () => {
+			newgen.classList.toggle('nobatidao');
+		});
+
+		newgen.addEventListener("mouseleave", () => {
+			newgen.classList.toggle('nobatidao');
+		});
+</script>
+</body>
+
+</html>
